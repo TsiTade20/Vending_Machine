@@ -6,6 +6,13 @@
 # Finally prints a receipt showing:
 # List of selected items with prices
 # Total cost
-
-snacks = []
-drinks = []
+"snacks" and "drinks" 
+menu = {
+         1: {"name": "chips", "price": 1.50},
+         2: {"name": "pretizels", "price": 1.30},
+         3: {"name": "cookies", "price": 3.00},
+         4: {"name": "soda", "price": 1.75},
+         5: {"name": "water bottle": 2.00}
+print("Snack & Drink Menu:")
+for number, item in menu.items():
+    print(f"{number}. {item['name']} - ${item['price']:.2f}")
